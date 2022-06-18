@@ -65,7 +65,9 @@ answers = [
 
 @app.route("/")
 def home():
-    return 'по ссылке <pre>/1</pre> первый навык, а <pre>/2</pre> - второй<br/><sub>Мы просто не знали, что задть</sub>'
+    return 'по ссылке <pre>https://not-intellectual-cats-marusya.herokuapp.com/1</pre>' \
+           ' первое задание, а <pre>https://not-intellectual-cats-marusya.herokuapp.com/2' \
+           '</pre> - второе<br/><sub>Мы просто не знали, что садть</sub>'
 
 
 @app.route("/1", methods=["POST"])
