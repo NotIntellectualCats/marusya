@@ -106,6 +106,10 @@ def second():
             "session": {derived_key: data["session"][derived_key] for derived_key in ['session_id', 'user_id', 'message_id']},
             "version": data["version"]
         }
+
+    key = "n"
+    if text in ["да", "ага", "именно так"]:
+        key = "y"
     session = list(map(add, session, changes[data["session"]["message_id"]]["y"]))
     sessions[data["session"]["session_id"]] = session
     print(session)
